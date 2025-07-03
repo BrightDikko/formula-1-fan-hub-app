@@ -1,6 +1,7 @@
 {
   "name": "formula-1-fan-hub",
   "version": "0.2.0",
+  
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
