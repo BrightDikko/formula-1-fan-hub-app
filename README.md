@@ -1,20 +1,15 @@
-# F1 2025 Web App - Feature 3
+# Formula 1 — **Fan Hub**
+---
 
+## Quick start
 
-## 1 · Install dependencies
-
+### 1 . Install dependencies
 ```bash
 npm install
-```
+````
 
-## 2 · Start a local server
+### 2 . Launch the dev server (http://localhost:3000)
 
 ```bash
 npm start
-```
-
-`serve` prints a URL (default `http://localhost:3000`).
-Open it in your browser.
-
-
-Happy racing\! 🏁
+````
