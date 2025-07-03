@@ -1,0 +1,589 @@
+/* variables */
+:root {
+  --clr-bg: #ffffff;
+  --clr-text: #eaeaea;
+  --clr-charcoal: #15161a;
+  --clr-card: #1d1f24;
+  --clr-card-alt: #2a2d33;
+  --clr-accent: #e50914;
+  --clr-grey: #bebebe;
+  --clr-grey-light: #c5c5c5;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* base text styles */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+/* layout container */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* navigation bar */
+nav {
+  background: var(--clr-charcoal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 0.25);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-title {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--clr-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background: rgba(229, 17, 28, 0.4);
+  color: #fff;
+}
+
+.nav-links a.active {
+  background: var(--clr-accent);
+  color: #fff;
+}
+
+/* hero / page heading */
+.page-heading {
+  text-align: center;
+  background: linear-gradient(135deg, #d42020 0%, #00299a 100%);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.12);
+}
+
+.page-heading h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.page-heading .sub {
+  color: #d0d0d0;
+  font-size: 1rem;
+}
+
+/* filter blocks (used on drivers & teams pages) */
+.driver-filter {
+  background: var(--clr-bg);
+  border: 2px solid var(--clr-grey);
+  border-radius: 10px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+}
+
+.driver-filter label {
+  font-weight: 600;
+  color: var(--clr-charcoal);
+  margin-right: 0.25rem;
+}
+
+.driver-filter input,
+.driver-filter select {
+  font: inherit;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--clr-grey-light);
+  border-radius: 4px;
+  background: #fff;
+  color: #222;
+}
+
+.driver-filter button {
+  background: var(--clr-accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.driver-filter button:hover {
+  transform: translateY(-2px);
+}
+
+/* generic card container */
+.card {
+  background: var(--clr-card);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.18);
+  padding: 1.5rem;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+
+/* tables */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: var(--clr-card-alt);
+}
+
+th,
+td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background: #22252b;
+}
+
+tbody tr:nth-child(even) {
+  background: #262a31;
+}
+
+tbody tr:hover {
+  background: #3d424d;
+}
+
+td img {
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.card table tbody td {
+  color: #fff;
+}
+
+/* slimmer rows for teams table */
+.teams-table th,
+.teams-table td {
+  padding: 0.45rem 0.6rem;
+}
+
+/* team crest images */
+.team-logo {
+  width: 48px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* make a whole cell clickable */
+.row-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* driver grid */
+.drivers-grid {
+  display: grid;
+  gap: 1.15rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .drivers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* driver cards */
+.driver-card {
+  --ring-color: var(--clr-accent);
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 260px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 55% 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.driver-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/pattern/background_pattern.webp") center/350px
+    repeat;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+.driver-card:hover,
+.driver-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 0 0 3px var(--ring-color), 0 8px 18px rgb(0 0 0 / 0.45);
+}
+
+.driver-card:hover h3,
+.driver-card:focus-visible h3 {
+  text-decoration: underline;
+}
+
+.driver-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 88%;
+  width: auto;
+  object-fit: cover;
+  object-position: 50% 100%;
+  filter: saturate(1.1);
+  z-index: 1;
+}
+
+.driver-card .info {
+  position: relative;
+  z-index: 2;
+  max-width: 45%;
+}
+
+.driver-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.driver-card .team {
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+}
+
+.driver-card .number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.flag {
+  width: 22px;
+  height: 14px;
+  border-radius: 2px;
+  margin-top: 0.3rem;
+}
+
+.flag-margin-left {
+  margin-left: 5px;
+}
+
+/* team colour themes */
+.team-mclaren {
+  --ring-color: #ffa64d;
+  background: linear-gradient(135deg, #ff7900 0%, #c54600 100%);
+}
+.team-mercedes {
+  --ring-color: #30d3d3;
+  background: linear-gradient(135deg, #029d9d 0%, #016b6b 100%);
+}
+.team-redbull {
+  --ring-color: #3366ff;
+  background: linear-gradient(135deg, #00327d 0%, #941518 100%);
+}
+.team-ferrari {
+  --ring-color: #ff4b4b;
+  background: linear-gradient(135deg, #ba0000 0%, #520000 100%);
+}
+.team-williams {
+  --ring-color: #4f7dff;
+  background: linear-gradient(135deg, #0049ff 0%, #00217a 100%);
+}
+.team-haas {
+  --ring-color: #9d9d9d;
+  background: linear-gradient(135deg, #6c6c6c 0%, #3b3b3b 100%);
+}
+.team-bulls {
+  --ring-color: #3f8cff;
+  background: linear-gradient(135deg, #005fbb 0%, #29488d 100%);
+}
+.team-aston {
+  --ring-color: #00a79b;
+  background: linear-gradient(135deg, #00645f 0%, #00322f 100%);
+}
+.team-kick {
+  --ring-color: #42dc97;
+  background: linear-gradient(135deg, #00b95b 0%, #00833c 100%);
+}
+.team-alpine {
+  --ring-color: #4c94ff;
+  background: linear-gradient(135deg, #006cff 0%, #0040a8 100%);
+}
+
+/* standings toggle (home) */
+.standings-toggle {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  border: 2px solid var(--clr-grey);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.standings-toggle .tab {
+  flex: 1 1 50%;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+  color: var(--clr-charcoal);
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.standings-toggle .tab:not(.active):hover {
+  background: #f2f2f2;
+}
+
+.standings-toggle .tab.active {
+  background: var(--clr-accent);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.standings-toggle .tab.active + .tab,
+.standings-toggle .tab + .tab.active {
+  border-radius: 0;
+}
+
+@media (max-width: 440px) {
+  .standings-toggle {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .standings-toggle .tab {
+    border-top: 1px solid var(--clr-grey);
+  }
+
+  .standings-toggle .tab:first-child {
+    border-top: none;
+  }
+}
+
+/* footer */
+footer {
+  background: var(--clr-charcoal);
+  color: #888;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* nav wraps on tablets */
+@media (max-width: 800px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
+/* reduce table content on ≤720px */
+@media (max-width: 720px) {
+  .standings-toggle {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.8rem;
+    min-width: 100%;
+  }
+
+  /* hide flag column on driver standings */
+  thead th:nth-child(3),
+  tbody td:nth-child(3) {
+    display: none;
+  }
+}
+
+/* hide extra driver columns on teams table for phones */
+@media (max-width: 720px) {
+  .teams-table thead th:nth-child(3),
+  .teams-table tbody td:nth-child(3),
+  .teams-table thead th:nth-child(4),
+  .teams-table tbody td:nth-child(4) {
+    display: none;
+  }
+
+  .teams-table {
+    font-size: 0.8rem;
+    min-width: 100%;
+  }
+}
+
+/* filter stacks vertically */
+@media (max-width: 620px) {
+  .driver-filter {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .driver-filter > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .driver-filter > div label {
+    flex: 0 0 60px;
+  }
+
+  .driver-filter > div input,
+  .driver-filter > div select {
+    flex: 1 1 auto;
+  }
+
+  .driver-filter button {
+    width: 100%;
+    margin-top: 0.35rem;
+  }
+}
+
+/* smaller driver cards on phones */
+@media (max-width: 500px) {
+  .driver-card {
+    min-height: 220px;
+    padding: 0.75rem 55% 0.75rem 0.75rem;
+  }
+
+  .driver-card h3 {
+    font-size: 1rem;
+  }
+
+  .driver-card .number {
+    font-size: 1.4rem;
+  }
+
+  .driver-card .info {
+    max-width: 50%;
+  }
+
+  .driver-photo {
+    height: 80%;
+  }
+}
+
+/* keep tables from stretching parents */
+.table-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* reusable back button */
+.back-btn {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  background: var(--clr-accent);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.back-btn:hover,
+.back-btn:focus-visible {
+  background: #c70811;
+  transform: translateY(-2px);
+}
+
+/* driver profile cards */
+.driver-info {
+  background: var(--clr-bg);
+  border: 2px solid var(--clr-grey);
+  border-radius: 10px;
+  color: var(--clr-charcoal);
+  text-align: center;
+}
+
+.driver-info h3 {
+  margin-top: 1.25rem;
+  font-size: 1.15rem;
+  color: var(--clr-charcoal);
+}
+
+.driver-info .profile-pic {
+  width: 220px;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
