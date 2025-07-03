@@ -276,8 +276,6 @@ td img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../images/pattern/background_pattern.webp") center/350px
-    repeat;
   opacity: 0.5;
   mix-blend-mode: overlay;
   z-index: 0;
