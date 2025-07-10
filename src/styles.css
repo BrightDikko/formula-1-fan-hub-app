@@ -96,6 +96,28 @@ nav {
   color: #fff;
 }
 
+/* overwrite any UA defaults that anchors don’t have */
+.nav-link-btn {
+  background: none;
+  border: none;
+  padding: 0.25rem 0.5rem;   /* same as .nav-links a */
+  margin: 0;                 /* ← removes the stray top margin */
+  line-height: 1;            /* matches your anchors’ line-height */
+  display: inline-block;     /* lets flexbox treat it like the <a> tags */
+  font: inherit;
+  font-weight: 500;
+  color: var(--clr-text);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.nav-link-btn:hover,
+.nav-link-btn:focus-visible {
+  background: rgba(229, 17, 28, 0.4);
+  color: #fff;
+}
+
 /* hero / page heading */
 .page-heading {
   text-align: center;
@@ -584,4 +606,102 @@ footer {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+
+/* Auth pages */
+.auth-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.auth-card {
+  background: var(--clr-bg);
+  border: 2px solid var(--clr-grey);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgb(0 0 0 / 0.15);
+  padding: 2rem 2rem 2.25rem;
+  width: 100%;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.1rem;
+}
+
+.auth-field label {
+  font-weight: 600;
+  color: var(--clr-charcoal);
+}
+
+.auth-field input {
+  font: inherit;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--clr-grey-light);
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.auth-field input:focus {
+  outline: none;
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.25);
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  background: var(--clr-accent);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.auth-submit:hover,
+.auth-submit:focus-visible {
+  background: #c70811;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--clr-charcoal);
+}
+
+.auth-footer a {
+  color: var(--clr-accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* inline auth error / success banner */
+.form-msg {
+  margin-top: 1rem;
+  padding: 0.9rem 1.15rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.12);
+}
+
+.form-msg.error {
+  background: rgba(229, 9, 20, 0.15);
+  border: 2px solid var(--clr-accent);
+  color: var(--clr-charcoal);
+}
+
+.form-msg.success {
+  background: rgba(0, 180, 90, 0.15);
+  border: 2px solid #00b45a;
+  color: var(--clr-charcoal);
 }
