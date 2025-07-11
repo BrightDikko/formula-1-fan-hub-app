@@ -22,3 +22,22 @@
 
 ## Contributor
 - Bright Dikko
+- Appo Nikiema
+- 
+---
+
+## (0.3.0) - 2025-07-01
+## Features
+- Full user authentication flow with Back4App / Parse
+- Auth service module (services/auth.js) isolates sign-up, log-in, log-out helpers
+- Global AuthContext + useAuth hook for session state and actions
+- ProtectedRoute guard blocks unauthenticated access to /drivers and /teams
+- AuthOnlyRoute guard prevents logged-in users from visiting /auth/*
+- Inline Login and Register pages styled to match site theme
+- FormMessage component replaces browser alerts with inline banners
+- Navbar swaps “Log in” ↔ “Log out” automatically; logout redirects home
+- Direct-URL typing handled both ways by route guards
+
+## Contributor
+- Bright Dikko
+- Appo Nikiema
