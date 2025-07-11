@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Home from './components/Home/Home';
 import DriversPage from './components/Drivers/DriversPage';
 import TeamsPage from './components/Teams/TeamsPage';
+import Account from './components/Account/account';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
 import ProtectedRoute from './components/Auth/ProtectedRoute';
@@ -36,6 +37,7 @@ export default function App() {
                     <Route element={<ProtectedRoute/>}>
                         <Route path="/drivers" element={<DriversPage/>}/>
                         <Route path="/teams" element={<TeamsPage/>}/>
+                        <Route path="/account" element={<Account />}/>
                     </Route>
 
                     {/* catch-all */}
