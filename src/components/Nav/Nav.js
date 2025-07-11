@@ -1,6 +1,8 @@
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import {useAuth} from '../Auth/AuthContext';
 
+import { FaUserCircle } from 'react-icons/fa'; 
+
 // Main navigation bar — rendered on every page.
 // Shows Log in when no session exists, otherwise shows Log out.
 // Clicking Log out clears the Parse session (via useAuth) and redirects home.
@@ -30,19 +32,12 @@ export default function Nav() {
                 <li><NavLink to="/teams">Teams </NavLink></li>
 
                 {currentUser ? (
-                    // Logged-in: replace “Log in” with a styled “Log out” pseudo-link
                     <li>
-                        <a
-                            href="/"
-                            type="button"
-                            onClick={handleLogoutClick}
-                            style={{cursor: "pointer"}}
-                        >
-                            Log out
-                        </a>
+                        <Link to="/account" title="Account">
+                            <FaUserCircle size={28} />
+                        </Link>
                     </li>
                 ) : (
-                    // Logged-out: normal link to the auth flow
                     <li><Link to="/auth/login">Log&nbsp;in</Link></li>
                 )}
             </ul>
