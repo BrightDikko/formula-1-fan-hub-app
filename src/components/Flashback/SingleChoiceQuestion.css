@@ -1,0 +1,117 @@
+.scq-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scq-question {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #222;
+    margin: 0 0 1.3rem;
+}
+
+.scq-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    max-width: 640px;
+}
+
+.scq-2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.scq-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.scq-4-cols,
+.scq-5-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.scq-btn {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid #d0d0d0;
+    border-radius: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    cursor: pointer;
+    transition: background .18s,
+    border-color .18s,
+    transform .18s,
+    box-shadow .18s;
+}
+
+.scq-btn:hover:not(.disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.scq-btn.selected {
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, .2);
+}
+
+.scq-btn.disabled {
+    opacity: .45;
+    pointer-events: none;
+}
+
+/* avatar + text */
+.scq-avatar {
+    width: 46%;
+    height: 46%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+    margin-bottom: .45rem;
+}
+
+.scq-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: .82rem;
+    font-weight: 800;
+    text-align: center;
+    color: #111;
+    line-height: 1.15;
+}
+
+.scq-team {
+    font-size: .68rem;
+    font-weight: 600;
+    color: #555;
+    text-align: center;
+    line-height: 1.1;
+}
+
+@media (max-width: 500px) {
+    .scq-btn {
+        border-radius: 14px;
+    }
+
+    .scq-avatar {
+        width: 52%;
+        height: 52%;
+    }
+
+    .scq-name {
+        font-size: .74rem;
+    }
+
+    .scq-team {
+        font-size: .6rem;
+    }
+}

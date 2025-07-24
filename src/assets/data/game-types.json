@@ -1,0 +1,74 @@
+[
+  {
+    "id": "podium_prediction",
+    "label": "Podium Prediction",
+    "description": "Predict the top 3 finishers of the race in correct order.",
+    "example": "Predict the podium for the 2008 Brazilian Grand Prix.",
+    "answerType": "driver_ordered_list",
+    "points": 10
+  },
+  {
+    "id": "pole_position",
+    "label": "Pole Position",
+    "description": "Select the driver who started the race in pole position.",
+    "example": "Who started on pole for the 2012 Singapore Grand Prix?",
+    "answerType": "driver_single_select",
+    "points": 8
+  },
+  {
+    "id": "fastest_lap",
+    "label": "Fastest Lap",
+    "description": "Select the driver who set the fastest lap during the race.",
+    "example": "Who set the fastest lap in the 2019 Austrian GP?",
+    "answerType": "driver_single_select",
+    "points": 8
+  },
+  {
+    "id": "driver_vs_driver",
+    "label": "Driver vs Driver",
+    "description": "Choose which of two teammates finished higher in the race.",
+    "example": "Who finished higher: Hamilton or Bottas?",
+    "answerType": "driver_head_to_head",
+    "points": 10
+  },
+  {
+    "id": "team_vs_team",
+    "label": "Team vs Team",
+    "description": "Choose which team scored more points in the race.",
+    "example": "Which team scored more: Red Bull or Ferrari?",
+    "answerType": "team_head_to_head",
+    "points": 10
+  },
+  {
+    "id": "dnf_prediction",
+    "label": "DNF Prediction",
+    "description": "Select one or more drivers who did not finish the race.",
+    "example": "Who failed to finish the 2017 Monaco Grand Prix?",
+    "answerType": "driver_multi_select",
+    "points": 12
+  },
+  {
+    "id": "safety_car",
+    "label": "Safety Car",
+    "description": "Predict whether a safety car appeared during the race.",
+    "example": "Was there a safety car in the 2010 Belgian Grand Prix?",
+    "answerType": "yes_no",
+    "points": 5
+  },
+  {
+    "id": "surprise_top5",
+    "label": "Surprise Top 5",
+    "description": "Pick a driver who surprisingly finished in the top 5.",
+    "example": "Which unexpected driver finished in the top 5?",
+    "answerType": "driver_single_select",
+    "points": 15
+  },
+  {
+    "id": "pitstop_battle",
+    "label": "Pitstop Battle",
+    "description": "Guess which team recorded the fastest pit stop.",
+    "example": "Which team had the fastest pit stop in this race?",
+    "answerType": "team_single_select",
+    "points": 7
+  }
+]
