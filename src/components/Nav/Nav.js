@@ -1,21 +1,15 @@
-import {Link, NavLink, useNavigate} from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import {useAuth} from '../Auth/AuthContext';
 import {IoGameController} from "react-icons/io5";
 import {RiAccountCircleFill} from "react-icons/ri";
+
+import {FaUserCircle} from 'react-icons/fa';
 
 // Main navigation bar — rendered on every page.
 // Shows Log in when no session exists, otherwise shows Log out.
 // Clicking Log out clears the Parse session (via useAuth) and redirects home.
 export default function Nav() {
-    const {user: currentUser, logout: logoutUser} = useAuth();
-    const navigate = useNavigate();
-
-    // Clear session token then take the user to the landing page
-    const handleLogoutClick = async (event) => {
-        event.preventDefault();
-        await logoutUser();
-        navigate('/', {replace: true});
-    };
+    const {user: currentUser} = useAuth();
 
     return (
         <nav>
@@ -48,19 +42,12 @@ export default function Nav() {
                 )}
 
                 {currentUser ? (
-                    // Logged-in: replace “Log in” with a styled “Log out” pseudo-link
                     <li>
-                        <a
-                            href="/"
-                            type="button"
-                            onClick={handleLogoutClick}
-                            style={{cursor: "pointer"}}
-                        >
-                            Log out
-                        </a>
+                        <Link to="/account" title="Account">
+                            <FaUserCircle size={28} />
+                        </Link>
                     </li>
                 ) : (
-                    // Logged-out: normal link to the auth flow
                     <li><Link to="/auth/login">Log&nbsp;in</Link></li>
                 )}
             </ul>
