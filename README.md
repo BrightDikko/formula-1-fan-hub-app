@@ -2,6 +2,14 @@
 
 Relive the drama, rewrite the history, race your memory! 🏁
 
+![f1-fan-hub-demo-1.png](public%2Fdemo%2Ff1-fan-hub-demo-1.png)
+
+---
+
+![f1-fan-hub-demo-2.png](public%2Fdemo%2Ff1-fan-hub-demo-2.png)
+
+---
+
 ## Getting Started
 
 ### Prerequisites
@@ -68,14 +76,6 @@ Open [http://localhost:3000](http://localhost:3000).
 ---
 
 ## Demo
-
-![f1-fan-hub-demo-1.png](public%2Fdemo%2Ff1-fan-hub-demo-1.png)
-
----
-
-![f1-fan-hub-demo-2.png](public%2Fdemo%2Ff1-fan-hub-demo-2.png)
-
----
 
 ![f1-fan-hub-demo-3.png](public%2Fdemo%2Ff1-fan-hub-demo-3.png)
 
