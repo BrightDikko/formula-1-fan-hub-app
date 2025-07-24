@@ -1,0 +1,37 @@
+{
+  "driverStandings": [
+    { "position": 1, "driverId": 1, "points": 198 },
+    { "position": 2, "driverId": 2, "points": 176 },
+    { "position": 3, "driverId": 3, "points": 155 },
+    { "position": 4, "driverId": 4, "points": 136 },
+    { "position": 5, "driverId": 5, "points": 104 },
+    { "position": 6, "driverId": 6, "points": 79 },
+    { "position": 7, "driverId": 7, "points": 63 },
+    { "position": 8, "driverId": 8, "points": 42 },
+    { "position": 9, "driverId": 9, "points": 22 },
+    { "position": 10, "driverId": 10, "points": 21 },
+    { "position": 11, "driverId": 11, "points": 20 },
+    { "position": 12, "driverId": 12, "points": 14 },
+    { "position": 13, "driverId": 13, "points": 13 },
+    { "position": 14, "driverId": 14, "points": 11 },
+    { "position": 15, "driverId": 15, "points": 10 },
+    { "position": 16, "driverId": 16, "points": 8 },
+    { "position": 17, "driverId": 17, "points": 6 },
+    { "position": 18, "driverId": 18, "points": 4 },
+    { "position": 19, "driverId": 19, "points": 0 },
+    { "position": 20, "driverId": 20, "points": 0 },
+    { "position": 21, "driverId": 21, "points": 0 }
+  ],
+  "constructorStandings": [
+    { "position": 1, "teamId": 1, "points": 374 },
+    { "position": 2, "teamId": 2, "points": 199 },
+    { "position": 3, "teamId": 3, "points": 183 },
+    { "position": 4, "teamId": 4, "points": 162 },
+    { "position": 5, "teamId": 5, "points": 55 },
+    { "position": 6, "teamId": 6, "points": 28 },
+    { "position": 7, "teamId": 7, "points": 28 },
+    { "position": 8, "teamId": 8, "points": 22 },
+    { "position": 9, "teamId": 9, "points": 20 },
+    { "position": 10, "teamId": 10, "points": 11 }
+  ]
+}

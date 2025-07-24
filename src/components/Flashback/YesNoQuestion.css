@@ -1,0 +1,47 @@
+.yn-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.q-text {
+    margin: 0 0 1.6rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.yn-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.yn-btn {
+    min-width: 120px;
+    padding: 0.9rem 1.4rem;
+    border-radius: 9999px;
+    font: 700 1.1rem/1 'Orbitron', sans-serif;
+    border: 2px solid var(--clr-accent);
+    background: none;
+    color: var(--clr-accent);
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, transform 0.18s;
+}
+
+.yn-btn:not(.selected):not(:disabled):hover,
+.yn-btn:not(.selected):not(:disabled):focus-visible {
+    background: rgba(225, 6, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.yn-btn.selected {
+    background: var(--clr-accent);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(225, 6, 0, 0.25);
+    transform: translateY(-1px);
+}
+
+.yn-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}

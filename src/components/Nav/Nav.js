@@ -1,5 +1,7 @@
 import {Link, NavLink, useNavigate} from 'react-router-dom';
 import {useAuth} from '../Auth/AuthContext';
+import {IoGameController} from "react-icons/io5";
+import {RiAccountCircleFill} from "react-icons/ri";
 
 // Main navigation bar — rendered on every page.
 // Shows Log in when no session exists, otherwise shows Log out.
@@ -28,6 +30,22 @@ export default function Nav() {
                 <li><NavLink to="/" end>Home </NavLink></li>
                 <li><NavLink to="/drivers">Drivers</NavLink></li>
                 <li><NavLink to="/teams">Teams </NavLink></li>
+
+                {currentUser && (
+                    <li>
+                        <NavLink to="/flashback">
+                            <IoGameController size={24}/>
+                        </NavLink>
+                    </li>
+                )}
+
+                {currentUser && (
+                    <li>
+                        <NavLink to="/profile" className="nav-profile-cta" title="My profile">
+                            <RiAccountCircleFill size={24}/>
+                        </NavLink>
+                    </li>
+                )}
 
                 {currentUser ? (
                     // Logged-in: replace “Log in” with a styled “Log out” pseudo-link

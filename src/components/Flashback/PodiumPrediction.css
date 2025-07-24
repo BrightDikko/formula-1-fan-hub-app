@@ -1,0 +1,145 @@
+.podium-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    margin-bottom: 2.2rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column.gold {
+    --h: 170px;
+}
+
+.column.silver {
+    --h: 140px;
+}
+
+.column.bronze {
+    --h: 120px;
+}
+
+.slot {
+    width: 110px;
+    height: var(--h);
+    border: 3px dashed #d8d8d8;
+    border-radius: 18px;
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .25s, border-color .25s;
+}
+
+.slot.filled {
+    border-style: solid;
+    border-color: var(--clr-accent);
+    background: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .10);
+}
+
+.slot.filled:hover {
+    box-shadow: 0 0 0 3px #e10600;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 2.4rem;
+    color: #cacaca;
+    line-height: 1;
+    user-select: none;
+}
+
+.pos-label {
+    margin-top: .5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #555;
+}
+
+.driver-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(90px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    max-width: 640px;
+    padding: 0;
+    margin: 0;
+}
+
+.driver-btn {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 2px solid #dbdbdb;
+    border-radius: 14px;
+    background: #fff;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+
+.driver-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.driver-btn.selected {
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, .18);
+}
+
+.driver-btn:disabled {
+    opacity: .45;
+    cursor: not-allowed;
+}
+
+.pill {
+    padding: .35rem .6rem;
+    background: var(--clr-accent);
+    color: #fff;
+    border-radius: 9999px;
+    font-size: .85rem;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .18);
+}
+
+.podium-driver-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+    .slot {
+        width: 80px;
+    }
+
+    .columns {
+        gap: 1.2rem;
+    }
+
+    .driver-grid {
+        gap: .7rem;
+    }
+}

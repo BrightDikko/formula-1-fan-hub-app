@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "McLaren",
+    "logo": "McLaren.svg",
+    "country": "United Kingdom",
+    "drivers": ["Oscar Piastri", "Lando Norris"],
+    "points": 374
+  },
+  {
+    "id": 2,
+    "name": "Mercedes",
+    "logo": "Mercedes.svg",
+    "country": "Germany",
+    "drivers": ["George Russell", "Kimi Antonelli"],
+    "points": 199
+  },
+  {
+    "id": 3,
+    "name": "Ferrari",
+    "logo": "Ferrari.svg",
+    "country": "Italy",
+    "drivers": ["Charles Leclerc", "Lewis Hamilton"],
+    "points": 183
+  },
+  {
+    "id": 4,
+    "name": "Red Bull Racing",
+    "logo": "RedBullRacing.svg",
+    "country": "Austria",
+    "drivers": ["Max Verstappen", "Yuki Tsunoda"],
+    "points": 162
+  },
+  {
+    "id": 5,
+    "name": "Williams",
+    "logo": "Williams.svg",
+    "country": "United Kingdom",
+    "drivers": ["Alexander Albon", "Carlos Sainz"],
+    "points": 55
+  },
+  {
+    "id": 6,
+    "name": "Haas",
+    "logo": "Haas.svg",
+    "country": "United States",
+    "drivers": ["Esteban Ocon", "Oliver Bearman"],
+    "points": 28
+  },
+  {
+    "id": 7,
+    "name": "Racing Bulls",
+    "logo": "RacingBulls.svg",
+    "country": "Italy",
+    "drivers": ["Isack Hadjar", "Liam Lawson"],
+    "points": 28
+  },
+  {
+    "id": 8,
+    "name": "Aston Martin",
+    "logo": "AstonMartin.svg",
+    "country": "United Kingdom",
+    "drivers": ["Lance Stroll", "Fernando Alonso"],
+    "points": 22
+  },
+  {
+    "id": 9,
+    "name": "Kick Sauber",
+    "logo": "KickSauber.svg",
+    "country": "Switzerland",
+    "drivers": ["Nico Hülkenberg", "Gabriel Bortoleto"],
+    "points": 20
+  },
+  {
+    "id": 10,
+    "name": "Alpine",
+    "logo": "Alpine.svg",
+    "country": "France",
+    "drivers": ["Pierre Gasly", "Franco Colapinto", "Jack Doohan"],
+    "points": 11
+  }
+]

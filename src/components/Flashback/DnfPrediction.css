@@ -1,0 +1,80 @@
+.dnf-wrap {
+    width: 100%;
+    text-align: center;
+}
+
+.q-text {
+    margin: 0 0 1.1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.note {
+    margin: 0 0 1.8rem;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.dnf-grid {
+    --min: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--min), 1fr));
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dnf-card {
+    position: relative;
+    padding: 0.9rem 0.6rem 1.1rem;
+    border-radius: 16px;
+    background: #fff;
+    border: 2px solid #dbdbdb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.dnf-card:hover:not(:disabled),
+.dnf-card:focus-visible:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dnf-card.selected {
+    border-color: var(--clr-accent);
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.25);
+}
+
+.dnf-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.7rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dnf-name {
+    display: block;
+    font-size: 0.88rem;
+    color: #222;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+}
+
+.dnf-team {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.dnf-card:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}

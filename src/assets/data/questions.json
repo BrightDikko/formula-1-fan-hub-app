@@ -1,0 +1,331 @@
+{
+  "2024": [
+    {
+      "raceId": "2024-miami",
+      "season": 2024,
+      "round": 6,
+      "grandPrix": "Miami Grand Prix",
+      "location": "Miami, United States",
+      "date": "2024-05-05",
+      "track": {
+        "name": "Miami International Autodrome",
+        "laps": 57,
+        "lengthKm": 5.41,
+        "layout": "Temporary Street Circuit"
+      },
+      "weather": {
+        "condition": "Dry",
+        "temperatureC": 29,
+        "rain": false
+      },
+      "results": {
+        "pole": 5,
+        "fastestLap": {
+          "driverId": 3,
+          "lapTime": "1:30.234",
+          "lapNumber": 44
+        },
+        "podium": [2, 3, 5],
+        "dnfs": [19, 11],
+        "safetyCar": {
+          "deployed": false,
+          "laps": []
+        },
+        "teamPoints": {
+          "1": 25,
+          "4": 18,
+          "3": 15,
+          "2": 8
+        }
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "type": "podium_prediction",
+          "text": "Predict the podium for the 2024 Miami Grand Prix.",
+          "options": [1, 2, 3, 5, 6, 19, 11],
+          "correctAnswer": [2, 3, 5],
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "pole_position",
+          "text": "Who started on pole for the 2024 Miami Grand Prix?",
+          "options": [2, 3, 5],
+          "correctAnswer": 5,
+          "points": 8
+        },
+        {
+          "id": "q3",
+          "type": "fastest_lap",
+          "text": "Who set the fastest lap during the race?",
+          "options": [2, 3, 5],
+          "correctAnswer": 3,
+          "points": 8
+        },
+        {
+          "id": "q4",
+          "type": "driver_vs_driver",
+          "text": "Who finished higher: Lando Norris or Charles Leclerc?",
+          "options": [2, 5],
+          "correctAnswer": 2,
+          "points": 10,
+          "metadata": {
+            "pair": [2, 5]
+          }
+        },
+        {
+          "id": "q5",
+          "type": "safety_car",
+          "text": "Was there a safety car in the 2024 Miami Grand Prix?",
+          "options": ["yes", "no"],
+          "correctAnswer": "no",
+          "points": 5
+        },
+        {
+          "id": "q6",
+          "type": "dnf_prediction",
+          "text": "Who failed to finish the race?",
+          "options": [19, 11, 5, 2],
+          "correctAnswer": [19, 11],
+          "points": 12
+        },
+        {
+          "id": "q7",
+          "type": "team_vs_team",
+          "text": "Which team scored more points: Ferrari or McLaren?",
+          "options": [3, 1],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "id": "q8",
+          "type": "surprise_top5",
+          "text": "Which unexpected driver finished in the top 5?",
+          "options": [2, 19, 11],
+          "correctAnswer": 2,
+          "points": 15
+        }
+      ]
+    },
+    {
+      "raceId": "2024-monaco",
+      "season": 2024,
+      "round": 7,
+      "grandPrix": "Monaco Grand Prix",
+      "location": "Monte Carlo, Monaco",
+      "date": "2024-05-26",
+      "track": {
+        "name": "Circuit de Monaco",
+        "laps": 78,
+        "lengthKm": 3.337,
+        "layout": "Street Circuit"
+      },
+      "weather": {
+        "condition": "Dry",
+        "temperatureC": 26,
+        "rain": false
+      },
+      "results": {
+        "pole": 5,
+        "fastestLap": {
+          "driverId": 2,
+          "lapTime": "1:15.841",
+          "lapNumber": 62
+        },
+        "podium": [5, 2, 3],
+        "dnfs": [11, 9],
+        "safetyCar": {
+          "deployed": true,
+          "laps": [1, 2, 3, 4]
+        },
+        "teamPoints": {
+          "3": 25,
+          "1": 18,
+          "4": 15,
+          "2": 8
+        }
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "type": "podium_prediction",
+          "text": "Predict the podium for the 2024 Monaco Grand Prix.",
+          "options": [2, 3, 5, 6, 11, 9],
+          "correctAnswer": [5, 2, 3],
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "pole_position",
+          "text": "Who started on pole for the 2024 Monaco Grand Prix?",
+          "options": [2, 3, 5],
+          "correctAnswer": 5,
+          "points": 8
+        },
+        {
+          "id": "q3",
+          "type": "fastest_lap",
+          "text": "Who set the fastest lap during the race?",
+          "options": [2, 3, 5],
+          "correctAnswer": 2,
+          "points": 8
+        },
+        {
+          "id": "q4",
+          "type": "driver_vs_driver",
+          "text": "Who finished higher: Charles Leclerc or Max Verstappen?",
+          "options": [5, 3],
+          "correctAnswer": 5,
+          "points": 10,
+          "metadata": {
+            "pair": [5, 3]
+          }
+        },
+        {
+          "id": "q5",
+          "type": "safety_car",
+          "text": "Was there a safety car in the 2024 Monaco Grand Prix?",
+          "options": ["yes", "no"],
+          "correctAnswer": "yes",
+          "points": 5
+        },
+        {
+          "id": "q6",
+          "type": "dnf_prediction",
+          "text": "Who failed to finish the race?",
+          "options": [9, 11, 2, 3],
+          "correctAnswer": [11, 9],
+          "points": 12
+        },
+        {
+          "id": "q7",
+          "type": "team_vs_team",
+          "text": "Which team scored more points: Red Bull Racing or McLaren?",
+          "options": [4, 1],
+          "correctAnswer": 1,
+          "points": 10
+        },
+        {
+          "id": "q8",
+          "type": "surprise_top5",
+          "text": "Which driver was a surprising top-5 finisher?",
+          "options": [5, 2, 8],
+          "correctAnswer": 2,
+          "points": 15
+        }
+      ]
+    }
+  ],
+
+  "2011": [
+    {
+      "raceId": "2011-british",
+      "season": 2011,
+      "round": 9,
+      "grandPrix": "British Grand Prix",
+      "location": "Silverstone, United Kingdom",
+      "date": "2011-07-10",
+      "track": {
+        "name": "Silverstone Circuit",
+        "laps": 52,
+        "lengthKm": 5.891,
+        "layout": "Permanent road course"
+      },
+      "weather": {
+        "condition": "Wet/Dry",
+        "temperatureC": 17,
+        "rain": true
+      },
+      "results": {
+        "pole": 3,
+        "fastestLap": {
+          "driverId": 5,
+          "lapTime": "1:34.908",
+          "lapNumber": 41
+        },
+        "podium": [5, 3, 2],
+        "dnfs": [10],
+        "safetyCar": {
+          "deployed": false,
+          "laps": []
+        },
+        "teamPoints": {
+          "3": 25,
+          "4": 18,
+          "1": 15,
+          "2": 10
+        }
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "type": "podium_prediction",
+          "text": "Predict the podium for the 2011 British Grand Prix.",
+          "options": [1, 2, 3, 5, 6, 10],
+          "correctAnswer": [5, 3, 2],
+          "points": 10
+        },
+        {
+          "id": "q2",
+          "type": "pole_position",
+          "text": "Who started on pole for the 2011 British Grand Prix?",
+          "options": [3, 5, 2],
+          "correctAnswer": 3,
+          "points": 8
+        },
+        {
+          "id": "q3",
+          "type": "fastest_lap",
+          "text": "Who set the fastest lap during the race?",
+          "options": [2, 3, 5],
+          "correctAnswer": 5,
+          "points": 8
+        },
+        {
+          "id": "q4",
+          "type": "driver_vs_driver",
+          "text": "Who finished higher: Charles Leclerc or Lando Norris?",
+          "options": [5, 2],
+          "correctAnswer": 5,
+          "points": 10,
+          "metadata": {
+            "pair": [5, 2]
+          }
+        },
+        {
+          "id": "q5",
+          "type": "safety_car",
+          "text": "Was there a safety car in the 2011 British Grand Prix?",
+          "options": ["yes", "no"],
+          "correctAnswer": "no",
+          "points": 5
+        },
+        {
+          "id": "q6",
+          "type": "dnf_prediction",
+          "text": "Who failed to finish the race?",
+          "options": [10, 6, 1, 2],
+          "correctAnswer": [10],
+          "points": 12
+        },
+        {
+          "id": "q7",
+          "type": "team_vs_team",
+          "text": "Which team scored more points: Red Bull Racing or Ferrari?",
+          "options": [4, 3],
+          "correctAnswer": 3,
+          "points": 10
+        },
+        {
+          "id": "q8",
+          "type": "surprise_top5",
+          "text": "Which driver was a surprise top-5 finisher?",
+          "options": [1, 6, 2],
+          "correctAnswer": 1,
+          "points": 15
+        }
+      ]
+    }
+  ]
+}
